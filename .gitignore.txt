@@ -1,0 +1,18 @@
+# Build output
+target/
+
+# IDE / editor files
+.idea/
+*.iml
+.project
+.classpath
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Safety – no JDK/jre folders
+OpenJDK-23/
+jdk*/
+jre*/

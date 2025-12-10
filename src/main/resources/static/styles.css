@@ -1,0 +1,124 @@
+body {
+	margin: 0;
+	font-family: "Segoe UI", sans-serif;
+} /* MAIN LAYOUT */
+.wrapper {
+	display: flex;
+	height: 100vh;
+} /* LEFT SECTION (CREAM BACKGROUND) */
+.left-section {
+	width: 60%;
+	padding: 5px;
+	background: #F5F2EE;
+} /* RIGHT SECTION (DARK GREEN BG) */
+.right-section {
+	width: 40%;
+	background: #0F3A3A;
+	padding: 25px;
+	color: white;
+} /* TITLE */
+.title {
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	color: #0F3A3A;
+} /* LABEL */
+.label {
+	font-size: 22px;
+	font-weight: 600;
+	display: block;
+	margin-top: 20px;
+	color: #0F3A3A;
+} /* INPUT BOX */
+.input {
+	width: 30%;
+	padding: 5px;
+	border-radius: 20px;
+	border: 2px solid #0F3A3A;
+	font-size: 18px;
+} /* HEXAGON CONTAINER */
+.hex-container {
+	margin-top: 10px;
+	width: 90%;
+	background: #0F3A3A;
+	padding: 1px;
+	color: white;
+	border-radius: 25px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.passage {
+	font-size: 18px;
+	text-align: center;
+	line-height: 1.5;
+} /* TYPING AREA */
+.typing-box {
+	width: 90%;
+	height: 50px;
+	overflow-y: scroll;
+	resize: none;
+	font-size: 15px;
+	margin-top: 15px;
+	padding: 20px;
+	background: #D9D6D2;
+	border-radius: 25px;
+	border: none;
+} /* BUTTON + TIMER */
+.controls {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.start-btn {
+	background: #0F3A3A;
+	color: white;
+	padding: 12px 30px;
+	border-radius: 30px;
+	font-size: 18px;
+	border: none;
+}
+
+.timer {
+	font-size: 20px;
+	font-weight: 600;
+	color: #0F3A3A;
+} /* STATS BAR */
+.stats-bar {
+	margin-top: 20px;
+	width: 90%;
+	background: #0F3A3A;
+	padding: 5px;
+	color: white;
+	border-radius: 25px;
+	display: flex;
+	justify-content: space-around;
+	font-size: 20px;
+	font-weight: 600;
+} /* RIGHT SIDE LEADERBOARD */
+.leader-title {
+	font-size: 38px;
+	text-align: center;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.leaderboard-box {
+	background: #D5D3D0;
+	padding: 20px;
+	border-radius: 15px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 20px;
+}
+
+th, td {
+	padding: 12px;
+	border: 2px solid #0F3A3A;
+	text-align: center;
+}

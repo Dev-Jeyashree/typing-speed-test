@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Typing Speed Test</title>
+<link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<!-- LEFT SIDE CONTENT -->
+		<div class="left-section">
+
+			<h1 class="title">Typing speed test</h1>
+
+			<label class="label">Your name : <input type="text"
+				id="playerName" class="input" placeholder=" Enter your name">
+			</label>
+
+			<!-- HEXAGON PASSAGE BOX -->
+			<div class="hex-container">
+				<p class="passage" id="testText">Java is a high-level,
+					class-based, object-oriented programming language that is designed
+					to have as few implementation dependencies as possible.</p>
+			</div>
+
+			<label class="label">Your Turn :</label>
+
+			<textarea id="typingArea" class="typing-box"
+				placeholder="start typing here..." disabled></textarea>
+
+			<!-- BUTTON + TIMER -->
+			<div class="controls">
+				<button id="startBtn" class="start-btn">Start Test (60s)</button>
+				<span class="timer">Time left: <span id="timeLeft">60</span>s
+				</span>
+			</div>
+			
+			<audio id="timerSound" src="alarm.mp3" preload="auto"></audio>
+
+			<!-- STATS BAR -->
+			<div class="stats-bar">
+				<p>
+					WPM: <span id="wpm">0</span>
+				</p>
+				<p>
+					Accuracy: <span id="accuracy">0</span>%
+				</p>
+				<p>
+					Characters: <span id="charsTyped">0</span>
+				</p>
+			</div>
+		</div>
+
+		<!-- RIGHT SECTION (LEADERBOARD) -->
+		<div class="right-section">
+
+			<h2 class="leader-title">LeaderBoard</h2>
+
+			<div class="leaderboard-box">
+				<table id="leaderboard">
+					<thead>
+						<tr>
+							<th>Rank</th>
+							<th>Name</th>
+							<th>WPM</th>
+							<th>Accuracy</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</div>
+
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>
